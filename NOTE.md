@@ -1,0 +1,1 @@
+This was created to practice before Azure re-certification exam.
