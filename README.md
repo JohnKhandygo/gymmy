@@ -31,6 +31,8 @@ Gymmy validates authentication tokens using JWKS as well as `iss`, `aud`, `exp`,
 
 Gymmy uses Google Sheet to store **non-sensitive** user data (e.g. goals, gym attendance, etc.). In a nutshell Gymmy is nothing more than a purpose-built GUI to a beautiful Google Sheet.
 
+Gymmy maintains Google Sheet OAuth tokens on the backend and never leaks those to GUI.
+
 Gymmy is deployed on Azure.
 
 Gymmy uses [Azure Table Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview) to store **sensitive** user data (e.g. tokens). 
