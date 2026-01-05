@@ -1,6 +1,6 @@
 # GYMMY
 
-Gymmy is a simple gym tracking app.
+Gymmy is a minimalistic **mobile-friendly** gym tracking app.
 
 Gymmy allows you to set a yearly goal for gym attendance.
 
@@ -40,3 +40,8 @@ Gymmy uses [Azure Table Storage](https://learn.microsoft.com/en-us/azure/storage
 Gymmy envelope-encrypts any **sensitive** user data (e.g. tokens) with ephemeral AES-256-GCM data-encryption keys (DEKs); each DEK is _wrapped_ by a Key Encryption Key (KEK) stored in [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) (AKV).
 
 Being a simple web application, Gymmy is deployed on [Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/overview).
+
+## Development Tools
+
+- [Poetry](https://python-poetry.org/docs/) for dependency management.
+- [OpenTofu](https://opentofu.org/docs/intro/) for infra deployment.

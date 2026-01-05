@@ -24,15 +24,14 @@ ALWAYS run `scripts/<script_name>.sh help` and inspect the output instead of rea
 
 ## Ways of Working
 
-You SHALL create an Implementation Plan before starting to write code. An Implementation Plan is a sequence of Atomic Commits:
-- Each Atomic Commit is confined to a single directory or package.
-- Each Atomic Commit does not break any existing tests unless it is TDD.
-- Each Atomic Commit ends with a Git commit.
+ALWAYS start in a fresh branch using `git checkout main && git pull && git checkout -b <new-branch-name>`.
 
-ALWAYS start in a fresh branch using `git fetch origin && git checkout -b <new-branch-name> origin/main`.
-
-ALWAYS use [_agent_commit.sh](/scripts/_agent_commit.sh) script to commit.
+You SHALL create an implementation plan before starting to write code. After each step of the plan you SHALL ensure that tests are passing, then commit.
 
 NEVER commit changes if tests does not pass. You MUST prioritize fixing the code so the tests pass.
 
+ALWAYS use [_agent_commit.sh](/scripts/_agent_commit.sh) script to commit.
+
 You MAY update [README.md](/README.md) IF AND ONLY IF it contains statements that are no longere true or confusing.
+
+When adding new dependencies make sure to use the latest **stable** versions. 
