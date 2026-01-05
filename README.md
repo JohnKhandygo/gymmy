@@ -12,6 +12,7 @@ Gymmy allows you to set your target bodyweight.
 
 ## Layout 
 
+├─ _files/ → Files that are ocasionally needed for context.
 ├─ bin/ → Compiled binary executables (ignored by Git).
 ├─ infra/ → Terraform files for infrastructure deployment.
 ├─ scripts/ → Bash script for building, testing, and deploying the app and its infrastructure. **TO BE USED BY DEVELOPERS, AI AGENTS, AND IN PIPELINES**
